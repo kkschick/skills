@@ -75,7 +75,7 @@ def mult_numbers(number_list):
 def join_strings(word_list):
     s = ''
     for item in word_list:
-        s += item
+        s += (item + ' ')
     return s
 
 # # Write a function that takes a list of integers and returns the average (without using the avg method)
