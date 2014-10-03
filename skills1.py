@@ -59,10 +59,10 @@ def word_lengths(word_list):
 
 # # Write a function (using iteration) that sums all the numbers in a list.
 def sum_numbers(number_list):
-    sum = 0
+    sum_of_numbers = 0
     for item in number_list:
-        sum += item
-    return sum
+        sum_of_numbers += item
+    return sum_of_numbers
 
 # # Write a function that multiplies all the numbers in a list together.
 def mult_numbers(number_list):
@@ -80,8 +80,20 @@ def join_strings(word_list):
 
 # # Write a function that takes a list of integers and returns the average (without using the avg method)
 def average(number_list):
-    sum = 0
+    sum_of_numbers = 0
     for item in number_list:
-        sum += item
-    average_of_list = sum / len(number_list)
+        sum_of_numbers += item
+    average_of_list = sum_of_numbers / len(number_list)
     return average_of_list
+
+print all_odd(number_list)
+print all_even(number_list)
+print long_words(word_list)
+print smallest(number_list)
+print largest(number_list)
+print halvesies(number_list)
+print word_lengths(word_list)
+print sum_numbers(number_list)
+print mult_numbers(number_list)
+print join_strings(word_list)
+print average(number_list)
