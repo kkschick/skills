@@ -1,4 +1,4 @@
-# Things you should be able to do.
+'''Rewriting manual versions of the filter, reduce, map.'''
 
 number_list = [-5, 6, 4, 8, 15, 16, 23, 42, 2, 7]
 word_list = [ "What", "about", "the", "Spam", "sausage", "spam", "spam", "bacon", "spam", "tomato", "and", "spam"]
