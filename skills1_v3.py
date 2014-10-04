@@ -11,11 +11,11 @@ len_4_list = lambda x: len(x) >= 4
 
 
 def new_filter(function, list):
-	new_list = []
-	for item in list:
-		if function(item) == True:
-			new_list.append(item)
-	return new_list
+    new_list = []
+    for item in list:
+        if function(item):
+            new_list.append(item)
+    return new_list
 
 print new_filter(odd_num, number_list)
 print new_filter(even_num, number_list)
@@ -29,10 +29,10 @@ multiplies = lambda x, y: x * y
 join_strings = lambda x, y: x + ' ' + y
 
 def new_reduce(function, list):
-	return_value = list[0]
-	for item in list[1:]:
-		return_value = function(return_value, item)
-	return return_value
+    accumulator = list[0]
+    for item in list[1:]:
+        accumulator = function(accumulator, item)
+    return accumulator
 
 print new_reduce(smallest, number_list)
 print new_reduce(largest, number_list)
@@ -46,10 +46,10 @@ halvsies = lambda x: x / 2.0
 word_length = lambda x: len(x)
 
 def new_map(function, list):
-	new_list = []
-	for item in list:
-		new_list.append(function(item))
-	return new_list
+    new_list = []
+    for item in list:
+        new_list.append(function(item))
+    return new_list
 
 print new_map(halvsies, number_list)
 print new_map(word_length, word_list)
